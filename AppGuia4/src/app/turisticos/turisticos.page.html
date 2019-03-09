@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>turisticos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+    <ion-button routerLink="" routerDirection="root">
+      <ion-icon name="arrow-round-back"></ion-icon></ion-button>
+
+    <ion-card *ngFor="let item of turistico" >
+        <ion-card-header>
+            <img [src]="item.imageUrl" [title]='item.tourName'> 
+          <ion-card-subtitle>{{ item.tourName }}</ion-card-subtitle>
+          <ion-card-title>{{ item.price }}</ion-card-title>
+        </ion-card-header>
+      
+        <ion-card-content>
+          Keep close to Nature's heart... and break clear away, once in awhile,
+          and climb a mountain or spend a week in the woods. Wash your spirit clean.
+        </ion-card-content>
+      </ion-card>
+
+
+</ion-content>
